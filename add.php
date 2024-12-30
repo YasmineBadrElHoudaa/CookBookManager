@@ -1,32 +1,4 @@
 <?php
-//if(isset($_GET['submit'])){// pour verifie que apres click sur submit if there s a data sent or not
-    //submit button have a variable into GET table //
-    // any form its like an associative array in get-array and mail .. are there composents
-    //echo $_GET['email'] ;
-   // echo $_GET['titre'] ;
-    //echo $_GET['ingredients'] ;                     
-
-//}
-// the fiiirst securite (htmlspecialchars : pour mettre tous type d entre sous forme de text qlq soit code ou text nrml)
-//the secooooond id the basic validation ! if empty : sa veut dire si l utilisateur a remplit la donnée de cet element ou non : il doit la remplir (requis) 
-// theee strong validation is using fonction de validation filtre_var filtrage de tous les donné
-// pour filtrer un element il faut mettre le contenu de ce element dans une variable 
-// apres on la passe dans la  fonction  de filtrage  comme premier argument  avec un dexieme argument le type de filtre utilisé selon le type de ce element(email.....)
-// initialisez l erreur pour que si les case sont empty elle affiche le vide 
-// dans le cas ou on a pas mettre des donné dans les cases : 
-    // apres submt il faut affciher le contenu + errors , when cest vide il afficher le contenu initialser 
-    // car les ingredients et tt va prendre des valeur dans else de empty (not empty) 
-    // l effectation de donnee token by user c est dans le cas ou il sont remplis les element 
-    //mais l affichage de donnée c'est dans tous les cas si sont rempli ou pas
-    // dans le cas ou sont pas rempli il va donner erruer so pour eviter ça on initialise les element 
-    // si rempli afficher remplissage si non afficher linitialisation '' 
-    
-    
-    
-    // ______________________****************redirecting__________________________**********
-    //after cheking smthngs and its true then we want to back to home page : 
-           // we use header(location : file of home page[notre exemple c est index.php]) 
-           // exemple : if(condition){ header(location:homefile.php)} or else{ header(location:homefle.php)}
 
 //**************************connectttt to data bases ********************
 include('config/db_connect.php') ;
@@ -94,6 +66,34 @@ if(isset($_POST['submit'])){// pour verifie que apres click sur submit if there 
         }
 
 }
+    //if(isset($_GET['submit'])){// pour verifie que apres click sur submit if there s a data sent or not
+    //submit button have a variable into GET table //
+    // any form its like an associative array in get-array and mail .. are there composents
+    //echo $_GET['email'] ;
+   // echo $_GET['titre'] ;
+    //echo $_GET['ingredients'] ;                     
+
+//}
+// the fiiirst securite (htmlspecialchars : pour mettre tous type d entre sous forme de text qlq soit code ou text nrml)
+//the secooooond id the basic validation ! if empty : sa veut dire si l utilisateur a remplit la donnée de cet element ou non : il doit la remplir (requis) 
+// theee strong validation is using fonction de validation filtre_var filtrage de tous les donné
+// pour filtrer un element il faut mettre le contenu de ce element dans une variable 
+// apres on la passe dans la  fonction  de filtrage  comme premier argument  avec un dexieme argument le type de filtre utilisé selon le type de ce element(email.....)
+// initialisez l erreur pour que si les case sont empty elle affiche le vide 
+// dans le cas ou on a pas mettre des donné dans les cases : 
+    // apres submt il faut affciher le contenu + errors , when cest vide il afficher le contenu initialser 
+    // car les ingredients et tt va prendre des valeur dans else de empty (not empty) 
+    // l effectation de donnee token by user c est dans le cas ou il sont remplis les element 
+    //mais l affichage de donnée c'est dans tous les cas si sont rempli ou pas
+    // dans le cas ou sont pas rempli il va donner erruer so pour eviter ça on initialise les element 
+    // si rempli afficher remplissage si non afficher linitialisation '' 
+    
+    
+    
+    // ______________________****************redirecting__________________________**********
+    //after cheking smthngs and its true then we want to back to home page : 
+           // we use header(location : file of home page[notre exemple c est index.php]) 
+           // exemple : if(condition){ header(location:homefile.php)} or else{ header(location:homefle.php)}
 ?>
 <!DOCTYPE html>
     <html>
