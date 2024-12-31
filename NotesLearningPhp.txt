@@ -1,0 +1,110 @@
+<?php 
+$stringOne = 'my email is' ;
+$stringTwo = 'yasmine123@gmail.com' ;
+//about striiiings //
+     /*echo $stringOne  .  $stringTwo ;*/
+       $name ='yasmine';
+    //echo strlen($name) ;
+    //echo strtoupper($name) ;
+    //echo strtolower($name) ;
+    //echo str_replace('m','K',$name) ;
+//abouuuuuut arrays 
+//index array , associative , multidim 
+//index 
+        //$name_array = ['val1','val2','val3'] ;
+     //to stored we need index : index type 
+     //echo $name_array[1] ;
+     //create 2
+     //$people2 = array('val1','val2','val3') ;
+     // print_r($people2);
+     //add valeur array_push($people2,'val4');
+     //print_r($people2);
+
+            //echo count($people2) ;
+            // meeerge table 
+            //$result = array_merge($people2,$name_array) ;
+            //print_r($result); 
+            //associatiiiiiiiiive array 
+            //$tableau = ['key1' => 'val1' , 'key2' => 'val2' , 'key3' => 'val3'] ;
+            //echo $tableau['key1'] ;
+            //print_r($tableau) ;
+             //$tableau2 = ['key4' => 'val4' , 'key5' => 'val5' , 'key6' => 'val6'] ;
+
+            //$tableau2['key7']= 'valeur7' ;
+            //print_r($tableau2) ;
+            // to merge :
+            //$result = array_merge($tableau,$tableau2) ;
+            //print_r($result) ;
+            //echo count($result) ;
+// MULTIII ARRRAAAAAAAAAY 
+    //$blogs =[
+   //['valeur1','valeur2','valeur3',50] ,
+   //['valeur4','valeur5','valeur6',60] ,
+   //['valeur7','valeur8','valeur9',70]
+      //  ] ;
+        // affichage de ce type : 
+        //Array ( [0] => Array ( [0] => valeur1 [1] => valeur2 [2] => valeur3 [3] => 50 )
+        // [1] => Array ( [0] => valeur4 [1] => valeur5 [2] => valeur6 [3] => 60 ) 
+        //[2] => Array ( [0] => valeur7 [1] => valeur8 [2] => valeur9 [3] => 70 ) )
+
+//print_r($blogs[1][3]) ;
+// pour afficher un tableau interne d indice i  dans  blogs print_r($blogs[i]) 
+// pour afficher j eme valeur du i eme tableau interne dans blogs  print_r($blogs[i][j]
+// to take the last element in simple array or last array in multidim array 
+// $var = array_pop($nameoftable) ex:
+//$popped = array_pop($blogs); 
+
+
+ //print_r($popped)  ;
+ //pour afficher donne de tableau par loop for :
+    // for ($i=0;$i<count(tableau); i++)
+    //if we dont know the length : we use for each loop : 
+        // pour chaque elemnt du tableau we execute the following code :
+        //foreach($tableau as var)//var a chaq fois recoit lelemnt du tableau pour lexecute le code{
+         //code
+         //code ...
+        // }
+
+//incluuuuude and require//
+// include : take code  from a nother file and put  it on our file including name of fle of the code
+//  require is smthng like include
+//difference between theme :
+    // include : if we put a file which not exist or some erreur on the code of the including file :
+        // show an erreur but excute the rest of code of the origin file
+        //require : if ther's an error on the including file : the rest of code in
+        // origin file will not be executed 
+
+        include('yasmine.php') ;
+        require ('yasmine.php') ;
+echo 'hello world' ;
+// also we can include some html codes on our file on the part of html : but
+// it's obliged that the including file on html his code is an html code : contentfile
+         
+
+?>
+
+
+<!DOCTYPE html > 
+<html>
+    <head>
+        <title>my first php file </title> 
+    </head>
+    <body>
+        <h1> <?php include('content.php') ?>  </h1>
+    
+    </body>
+</html>
+////// __******  include and require ******___///////
+<div>
+    <h1> <?php  echo 'some content' ?> </h1>
+</div>
+
+
+
+
+
+<?php
+
+$yasmine = ['valeur1','valeur2','valeur3'] ;
+echo $yasmine[1] . '<br/>' ;
+  ?> 
